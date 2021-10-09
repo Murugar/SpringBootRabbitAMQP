@@ -29,11 +29,11 @@ public class CustomMessageSender {
         
     }
     
-    @Scheduled(fixedDelay = 1000L)
+   // @Scheduled(fixedDelay = 1000L)
     public void sendMessage() {
-        log.info("Sending Ordinary Message using Rabbit...");
-        Message m = new Message("Greeting AMQP".getBytes(), new MessageProperties());
-        rabbitTemplate.send(MessagingApplication.EXCHANGE_NAME, MessagingApplication.ROUTING_KEY,m);
+       // log.info("Sending Ordinary Message using Rabbit...");
+       // Message m = new Message("Greeting AMQP".getBytes(), new MessageProperties());
+        //rabbitTemplate.send(MessagingApplication.EXCHANGE_NAME, MessagingApplication.ROUTING_KEY,m);
         
     }
     
